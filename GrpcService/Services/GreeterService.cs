@@ -19,5 +19,13 @@ namespace GrpcService
                 Message = "Hello " + request.Name
             });
         }
+
+        public override Task<TestRet> TestAPI(TestMsg massage, ServerCallContext context)
+        {
+            return Task.FromResult(new TestRet
+            {
+                Param = "Service received " + massage.Param
+            });
+        }
     }
 }

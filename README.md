@@ -5,12 +5,13 @@ gRPC 간단 예제 만들기
 ### 구성
 
 - Server : GrpcService
-- Client : GrpcClient
-
+- Client : GrpcClient, GrpcWebClient
+</br>
 - GrpcService : gRPC 서비스 프로젝트
 - GrpcClient : 콘솔 애플리케이션 프로젝트
+- GrpcWebClient : ASP.NET Core 웹 애플리케이션 (MVC) 프로젝트
 
-### GrpcClient NuGet 패키지
+### Client NuGet 패키지
 
 - Grpc.Net.Client
 - Grpc.Tools
